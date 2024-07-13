@@ -1,0 +1,116 @@
+/* Importation de la police Google Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Réinitialisation de certains styles par défaut pour une cohérence entre les navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styles de la barre de navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #4CAF50;
+}
+
+/* Styles généraux de section */
+section {
+    padding: 40px 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Centre l'iframe dans la section Accueil */
+#accueil iframe {
+    display: block; /* Assure que l'iframe se comporte comme un bloc pour permettre le centrage */
+    margin: 20px auto; /* Centre horizontalement avec une marge verticale */
+    width: 560px; /* Largeur de l'iframe */
+    height: 315px; /* Hauteur de l'iframe */
+}
+
+/* Styles de titres pour chaque section */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Styles de paragraphe */
+p {
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Styles du formulaire */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form label {
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styles du pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
